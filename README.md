@@ -56,25 +56,18 @@ Install dependencies:
 pip install python-gvm
 🧪 How to Use
 1. Scan for Live Hosts
-
 python netdiscover_parser.py
+
 2. Run a Port Scan
-
 python port_scanner.py 192.168.1.10
+
 3. Trigger OpenVAS Scan
-
 python openvas_integration.py
+
 4. Launch Secure Remote Shell
-On attacker/server machine:
+On attacker/server machine: python server.py
+On target/client machine: python client.py
 
-
-python server.py
-On target/client machine:
-
-bash
-Copy
-Edit
-python client.py
 🧠 Learning Objectives
 This project is built for cybersecurity learners and aspiring red teamers. By using it, you'll get hands-on experience with:
 
