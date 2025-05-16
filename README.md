@@ -44,87 +44,92 @@ RavenTrace/
 ```
 ## 🛠️ Requirements
 
-- Python 3.10+
-- `netdiscover`
-- [OpenVAS](https://www.greenbone.net/en/) or GVM server
-- Python packages:
-  - `python-gvm`
-  - `ssl`, `socket`, `subprocess`
+To run **RavenTrace**, make sure your system has the following:
 
-Install dependencies:
+### 🔧 Environment
+- 🐍 **Python** 3.10+
+- 🌐 [`netdiscover`](https://github.com/netdiscover-scanner/netdiscover)
+- 🛡️ [**OpenVAS/GVM**](https://www.greenbone.net/en/) vulnerability scanner
+
+### 📦 Python Packages
+- `python-gvm`
+- Standard libraries: `ssl`, `socket`, `subprocess`
+
+### 💡 Installation
 
 ```bash
 pip install python-gvm
 ```
 
 🧪 How to Use
-1. Scan for Live Hosts
+1️⃣ Scan for Live Hosts
+bash
+Copy
+Edit
 python netdiscover_parser.py
-
-3. Run a Port Scan
+2️⃣ Run a Port Scan
+bash
+Copy
+Edit
 python port_scanner.py 192.168.1.10
-
-4. Trigger OpenVAS Scan
+3️⃣ Trigger OpenVAS Scan
+bash
+Copy
+Edit
 python openvas_integration.py
+4️⃣ Launch Secure Remote Shell
+On attacker/server machine:
 
-5. Launch Secure Remote Shell
-On attacker/server machine: python server.py
-On target/client machine: python client.py
+bash
+Copy
+Edit
+python server.py
+On target/client machine:
 
+bash
+Copy
+Edit
+python client.py
 🧠 Learning Objectives
-By exploring and using RavenTrace, you’ll develop hands-on experience in:
+By using RavenTrace, you’ll gain real-world cybersecurity experience in:
 
-🔌 Socket programming and secure communication (SSL)
+🔌 Socket programming and SSL-based encryption
 
-🔗 Client-server architecture
+🔗 Client-server architecture for secure communication
 
-📡 Network scanning and reconnaissance
+📡 Network scanning, host discovery, and port enumeration
 
-⚙️ OpenVAS API automation with python-gvm
+⚙️ OpenVAS API integration using python-gvm
 
-🎭 Traffic obfuscation and evasion tactics
+🎭 Traffic obfuscation to mimic legitimate HTTP/SSL connections
 
-🔁 Modular, reusable Python scripting for red teaming
+🧩 Modular scripting for red team automation
 
 ⚠️ Disclaimer
-This toolkit is strictly for educational and ethical penetration testing purposes.
+This toolkit is strictly for educational and authorized penetration testing.
 
-🚫 Unauthorized use is illegal and unethical.
-✅ Always have written consent before scanning or accessing any system.
+🚫 Do not use this on unauthorized systems or networks.
+
+✅ Always obtain written permission before scanning or accessing any system.
 
 📜 License
-Released under the MIT License for educational use only.
-Not for use in production or unauthorized environments.
+Released under the MIT License — for educational use only.
+Not intended for use in production or unlawful environments.
 
 👩‍💻 Author
 Eshaal Umair
 Cybersecurity Enthusiast & Developer
-🔐 Exploring the edge where code meets command and control.
+Exploring the edge where code meets command and control.
 
-📸 Screenshots & Demo (Coming Soon)
-Stay tuned for:
-
-Live walkthroughs
-
-GIFs of active scans
-
-API integration previews
-
-Real-time remote shell demos
 
 🌟 Contribute / Star / Fork
-If you found this project useful or educational, don’t forget to:
+If you find this project useful, consider supporting it:
 
-⭐ Star the repository
+⭐ Star the repo to spread the word
 
-🍴 Fork it for your own toolkit
+🍴 Fork it to customize and expand
 
-🛠️ Submit PRs for new modules or improvements
+🛠 Submit pull requests with fixes or new features
 
-🦅 RavenTrace — Because every shadow needs eyes.
+RavenTrace — Because every shadow needs eyes.
 Get in. Get intel. Get out.
-
-
----
-
-Let me know if you want a matching `banner.png` for your repo header or an ASCII logo to include in the terminal outputs!
