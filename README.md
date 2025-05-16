@@ -61,35 +61,32 @@ To run **RavenTrace**, make sure your system has the following:
 pip install python-gvm
 ```
 
-🧪 How to Use
-1️⃣ Scan for Live Hosts
-bash
-Copy
-Edit
-python netdiscover_parser.py
-2️⃣ Run a Port Scan
-bash
-Copy
-Edit
-python port_scanner.py 192.168.1.10
-3️⃣ Trigger OpenVAS Scan
-bash
-Copy
-Edit
-python openvas_integration.py
-4️⃣ Launch Secure Remote Shell
-On attacker/server machine:
+## 🧪 How to Use
 
-bash
-Copy
-Edit
-python server.py
-On target/client machine:
+1. **Scan for Live Hosts**
+   ```bash
+   python netdiscover_parser.py
+   
+2. Run a port scan
+   ```bash
+   python port_scanner.py 192.168.1.10
+   
+3. Trigger an OpenVAS Vulnerability Scan
+    ```bash
+    python openvas_integration.py
+    
+4. Launch the Secure Remote Shell
+   On the attacker/server machine:
+    ```bash
+    python server.py
 
-bash
-Copy
-Edit
-python client.py
+ -  On the target/client machine:
+    ```bash
+       python client.py
+
+
+
+
 🧠 Learning Objectives
 By using RavenTrace, you’ll gain real-world cybersecurity experience in:
 
