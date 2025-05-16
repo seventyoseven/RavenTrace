@@ -1,11 +1,11 @@
-# RavenTrace
-# 🔍 Secure Recon Toolkit | Red Team Recon & Remote Ops Suite
+# 🦅 RavenTrace  
+## 🔍 Secure Recon Toolkit | Red Team Recon & Remote Ops Suite
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-Educational%20Use%20Only-red)
 ![Status](https://img.shields.io/badge/status-Work%20in%20Progress-yellow)
 
-Welcome to **Secure Recon Toolkit** — a modular, Python-powered framework for red teamers, ethical hackers, and cybersecurity students. This toolkit combines network discovery, port scanning, OpenVAS integration, and secure remote command execution into a thrilling, hands-on cybersecurity learning experience.
+**RavenTrace** is a modular, Python-powered framework designed for red teamers, ethical hackers, and cybersecurity enthusiasts. It combines network reconnaissance, port scanning, OpenVAS automation, and a secure remote shell—packed with traffic obfuscation techniques to simulate legit connections.
 
 > ⚠️ **This project is for educational use only.** Do **not** run this against systems without explicit permission.
 
@@ -13,33 +13,34 @@ Welcome to **Secure Recon Toolkit** — a modular, Python-powered framework for 
 
 ## 🚀 Features
 
-- 🔎 **Port Scanner** — Lightweight scanner for identifying open TCP ports
-- 🧠 **Netdiscover Parser** — Extracts live IPs from the local subnet using `netdiscover`
-- 🛡️ **OpenVAS API Integration** — Automates vulnerability scans using OpenVAS's API
-- 🔐 **Secure Client-Server Remote Shell** — Encrypted SSL communication for safe command execution
-- 🕵️ **Traffic Obfuscation** *(Optional)* — Simulate legitimate-looking HTTP traffic
-- 📦 **Modular Design** — Each component is separate and reusable for custom workflows
+- 🔎 **Port Scanner** – Lightweight tool to identify open TCP ports  
+- 🌐 **Netdiscover Integration** – Gathers live hosts on the local network  
+- 🛡️ **OpenVAS Automation** – Launch scans via API and extract vulnerability reports  
+- 🔐 **Secure Remote Shell** – SSL-encrypted server-client communication  
+- 🕵️ **Traffic Obfuscation** *(Optional)* – Mimics normal web traffic to remain undetected  
+- 🧩 **Modular Architecture** – Use each module independently or together  
 
 ---
 
 ## 🗂️ Project Structure
 
-secure_recon_toolkit/
+```text
+RavenTrace/
 │
-├── client.py # Remote client that executes received commands
-├── server.py # Command server with SSL connection
-├── port_scanner.py # Standalone TCP port scanner
-├── netdiscover_parser.py # Parses netdiscover output for live IPs
-├── openvas_integration.py # Automates OpenVAS scans via API
-├── traffic_obfuscator.py # Obfuscates network traffic to mimic HTTP/SSL
-├── main.py # Optional launcher to tie everything together
+├── client.py               # Remote client to receive and execute commands
+├── server.py               # Server to send commands over SSL
+├── port_scanner.py         # TCP port scanner
+├── netdiscover_parser.py   # Parses netdiscover output to find live hosts
+├── openvas_integration.py  # Triggers OpenVAS scans via the API
+├── traffic_obfuscator.py   # Optional HTTP/SSL traffic mimicry
+├── main.py                 # (Optional) Unified launcher
+│
 ├── certs/
-│ ├── server.crt # SSL certificate (generate your own)
-│ └── server.key # SSL key
+│   ├── server.crt          # SSL certificate (self-signed or custom)
+│   └── server.key          # SSL key
+│
 └── results/
-└── scan_report_*.txt # Scan results (auto-generated)
-
----
+    └── scan_report_*.txt   # Auto-generated scan results
 
 ## 🛠️ Requirements
 
@@ -54,40 +55,46 @@ Install dependencies:
 
 ```bash
 pip install python-gvm
+```
+
 🧪 How to Use
 1. Scan for Live Hosts
 python netdiscover_parser.py
 
-2. Run a Port Scan
+3. Run a Port Scan
 python port_scanner.py 192.168.1.10
 
-3. Trigger OpenVAS Scan
+4. Trigger OpenVAS Scan
 python openvas_integration.py
 
-4. Launch Secure Remote Shell
+5. Launch Secure Remote Shell
 On attacker/server machine: python server.py
 On target/client machine: python client.py
 
 🧠 Learning Objectives
-This project is built for cybersecurity learners and aspiring red teamers. By using it, you'll get hands-on experience with:
+By exploring and using RavenTrace, you’ll develop hands-on experience in:
 
-Low-level networking (sockets, SSL)
+🔌 Socket programming and secure communication (SSL)
 
-Command execution pipelines
+🔗 Client-server architecture
 
-API usage (OpenVAS via python-gvm)
+📡 Network scanning and reconnaissance
 
-Reconnaissance workflows
+⚙️ OpenVAS API automation with python-gvm
 
-Traffic disguising techniques
+🎭 Traffic obfuscation and evasion tactics
+
+🔁 Modular, reusable Python scripting for red teaming
 
 ⚠️ Disclaimer
-This toolkit is strictly for educational and authorized penetration testing.
-Unauthorized use is illegal and unethical. Always have written consent before scanning or accessing any system.
+This toolkit is strictly for educational and ethical penetration testing purposes.
+
+🚫 Unauthorized use is illegal and unethical.
+✅ Always have written consent before scanning or accessing any system.
 
 📜 License
-This project is released under the MIT License for educational purposes only.
-Not to be used in production or unauthorized networks.
+Released under the MIT License for educational use only.
+Not for use in production or unauthorized environments.
 
 👩‍💻 Author
 Eshaal Umair
@@ -95,10 +102,29 @@ Cybersecurity Enthusiast & Developer
 🔐 Exploring the edge where code meets command and control.
 
 📸 Screenshots & Demo (Coming Soon)
-Check back for live walkthroughs, GIFs, and tips on customizing this toolkit to suit your needs.
+Stay tuned for:
 
-🌟 Star this repo if you find it useful, and share with your fellow cybersecurity learners!
+Live walkthroughs
+
+GIFs of active scans
+
+API integration previews
+
+Real-time remote shell demos
+
+🌟 Contribute / Star / Fork
+If you found this project useful or educational, don’t forget to:
+
+⭐ Star the repository
+
+🍴 Fork it for your own toolkit
+
+🛠️ Submit PRs for new modules or improvements
+
+🦅 RavenTrace — Because every shadow needs eyes.
+Get in. Get intel. Get out.
+
 
 ---
 
-Let me know if you'd like a badge, ASCII logo, or a walkthrough video script added to it as well!
+Let me know if you want a matching `banner.png` for your repo header or an ASCII logo to include in the terminal outputs!
