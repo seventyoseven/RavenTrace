@@ -1,4 +1,4 @@
-# 🦅 RavenTrace  
+#  RavenTrace  
 ## 🔍 Secure Recon Toolkit | Red Team Recon & Remote Ops Suite
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
@@ -142,5 +142,5 @@ If you find this project useful, consider supporting it:
 
 ---
 
-### 🦅 *RavenTrace — Because every shadow needs eyes.*  
+###  *RavenTrace — Because every shadow needs eyes.*  
 **Get in. Get intel. Get out.**
