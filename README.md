@@ -41,7 +41,7 @@ RavenTrace/
 │
 └── results/
     └── scan_report_*.txt   # Auto-generated scan results
-
+```
 ## 🛠️ Requirements
 
 - Python 3.10+
