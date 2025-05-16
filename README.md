@@ -76,7 +76,7 @@ pip install python-gvm
     python openvas_integration.py
     
 4. Launch the Secure Remote Shell
-   On the attacker/server machine:
+ -  On the attacker/server machine:
     ```bash
     python server.py
 
